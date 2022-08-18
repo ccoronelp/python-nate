@@ -24,3 +24,12 @@ def arg_dic(**kargs):
         print('Existe la persona',kargs['nombre'])
 
 arg_dic(nombre='Carlos',apellido='Coronel')
+
+#Usando args y kwargs
+
+def arg_kwarg(*args,**kwargs):
+    print(args)
+    print(kwargs)
+    print('Me gustaría {} {}'.format(args[0],kwargs['comida']))
+
+arg_kwarg(10,30,50,fruta='naranja',comida='Arroz con pollo',anima='perro')
